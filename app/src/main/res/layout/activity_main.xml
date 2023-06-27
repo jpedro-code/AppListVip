@@ -18,7 +18,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
 
     <EditText
         android:id="@+id/name_edit"
@@ -30,7 +31,8 @@
         android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="98dp" />
+        tools:layout_editor_absoluteX="98dp"
+        android:autofillHints="name" />
 
     <EditText
         android:id="@+id/sobrenome_edit"
@@ -42,7 +44,8 @@
         android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/name_edit"
-        tools:layout_editor_absoluteX="93dp" />
+        tools:layout_editor_absoluteX="93dp"
+        android:autofillHints="username" />
 
     <EditText
         android:id="@+id/nome_course_edit"
@@ -55,7 +58,8 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sobrenome_edit" />
+        app:layout_constraintTop_toBottomOf="@+id/sobrenome_edit"
+        android:autofillHints="name" />
 
     <EditText
         android:id="@+id/phone_ed"
@@ -68,7 +72,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nome_course_edit"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:autofillHints="phone" />
 
     <Button
         android:id="@+id/button_limpar"
@@ -96,7 +101,7 @@
         android:id="@+id/button_finalizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="20dp"
         android:text="@string/finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
