@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
+    <TextView android:id="@+id/titulotxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="550sp"
@@ -21,8 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.198" />
 
-    <EditText
-        android:id="@+id/name_edit"
+    <EditText android:id="@+id/name_edit"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="20dp"
@@ -30,12 +28,11 @@
         android:hint="@string/nome"
         android:inputType="text"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/titulotxt"
         tools:layout_editor_absoluteX="98dp"
         android:autofillHints="name" />
 
-    <EditText
-        android:id="@+id/sobrenome_edit"
+    <EditText android:id="@+id/sobrenome_edit"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="20dp"
@@ -47,8 +44,7 @@
         tools:layout_editor_absoluteX="93dp"
         android:autofillHints="username" />
 
-    <EditText
-        android:id="@+id/nome_course_edit"
+    <EditText android:id="@+id/curso_edit"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="20dp"
@@ -61,8 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sobrenome_edit"
         android:autofillHints="name" />
 
-    <EditText
-        android:id="@+id/phone_ed"
+    <EditText android:id="@+id/phone_ed"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="20dp"
@@ -71,7 +66,7 @@
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_course_edit"
+        app:layout_constraintTop_toBottomOf="@+id/curso_edit"
         android:textAlignment="center"
         android:autofillHints="phone" />
 
