@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
-    <TextView android:id="@+id/titulotxt"
+    <TextView
+        android:id="@+id/titulotxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="550sp"
@@ -20,55 +21,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.198" />
 
-    <EditText android:id="@+id/name_edit"
+    <EditText
+        android:id="@+id/name_edit"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="20dp"
+        android:autofillHints="name"
         android:ems="10"
         android:hint="@string/nome"
         android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/titulotxt"
-        tools:layout_editor_absoluteX="98dp"
-        android:autofillHints="name" />
+        tools:layout_editor_absoluteX="98dp" />
 
-    <EditText android:id="@+id/sobrenome_edit"
+    <EditText
+        android:id="@+id/sobrenome_edit"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="20dp"
+        android:autofillHints="username"
         android:ems="10"
         android:hint="@string/sobrenome"
         android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/name_edit"
-        tools:layout_editor_absoluteX="93dp"
-        android:autofillHints="username" />
+        tools:layout_editor_absoluteX="93dp" />
 
-    <EditText android:id="@+id/curso_edit"
+    <EditText
+        android:id="@+id/curso_edit"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="20dp"
+        android:autofillHints="name"
         android:ems="10"
         android:hint="@string/nome_do_curso"
         android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sobrenome_edit"
-        android:autofillHints="name" />
+        app:layout_constraintTop_toBottomOf="@+id/sobrenome_edit" />
 
-    <EditText android:id="@+id/phone_ed"
+    <EditText
+        android:id="@+id/phone_ed"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="20dp"
+        android:autofillHints="phone"
         android:ems="10"
         android:hint="@string/phone"
         android:inputType="phone"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/curso_edit"
-        android:textAlignment="center"
-        android:autofillHints="phone" />
+        app:layout_constraintTop_toBottomOf="@+id/curso_edit" />
 
     <Button
         android:id="@+id/button_limpar"
