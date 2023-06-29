@@ -6,8 +6,6 @@ public class Pessoa{
     private String nomeDoCurso;
     private String phone;
 
-
-
     public String getNome() {
         return nome;
     }
